@@ -1,0 +1,29 @@
+# Zig build artifacts
+zig-out/
+.zig-cache/
+
+# Legacy cache dir (Zig < 0.12)
+zig-cache/
+
+# Compiled binaries / object files
+*.o
+*.obj
+*.exe
+*.pdb
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Core dumps
+core
+*.core
+
+# Editor / OS noise
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+*.out
