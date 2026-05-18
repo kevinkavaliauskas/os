@@ -17,7 +17,7 @@ pub fn build(b: *std.Build) void {
         .name = "kernel.elf",
         .root_module = kernel_mod,
     });
-    kernel_mod.addAssemblyFile(b.path("src/start.S"));
+    kernel_mod.addAssemblyFile(b.path("src/start.s"));
     kernel.setLinkerScript(b.path("linker.ld"));
     kernel.entry = .disabled;
     b.installArtifact(kernel);

@@ -24,4 +24,11 @@ SECTIONS {
     . = ALIGN(16);
     . += 0x4000;
     stack_top = .;
+
+    /DISCARD/ : {
+        *(.eh_frame*)
+        *(.note*)
+        *(.comment*)
+        *(.riscv.attributes*)
+    }
 }
